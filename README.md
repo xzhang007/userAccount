@@ -14,7 +14,7 @@ mysql>  create database test;
 
 mysql> use test;
 
-mysql> create table if not exist account (id int not null auto_increment,
+mysql> create table if not exists account (id int not null auto_increment,
 username varchar(100) not null,
 password varchar(100) not null,
 email varchar(100) not null,
