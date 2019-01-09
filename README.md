@@ -14,13 +14,14 @@ mysql>  create database test;
 
 mysql> use test;
 
-mysql> create table account (id int not null, auto_increment,
-username, varchar(100), not null,
-email, varchar(100), not null,
+mysql> create table if not exists account (id int not null auto_increment,
+username varchar(100) not null,
+password varchar(100) not null,
+email varchar(100) not null,
 primary key (id)
 );
 
 
 If there is still connection errer:
 
-mysql> alter user 'user'@'localhost' indentified with mysql_native_password by '';
+mysql> alter user 'root'@'localhost' indentified with mysql_native_password by '';
